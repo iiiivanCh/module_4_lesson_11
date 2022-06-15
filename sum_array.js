@@ -7,9 +7,10 @@ const doSumArray = (arr) => {
   arr.push(arrayMember);
   const sum = arr.reduce((acc, val) => acc + val);
   if (sum > 50) {
-    return arr;
+    return arrNew;
   }
   doSumArray(arr);
 };
 
 doSumArray(arrNew);
+console.log(arrNew);
