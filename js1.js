@@ -1,17 +1,17 @@
 "use strict";
 
 const restangle = {
-  width: '5см',
-  height: '5см',
+  width: "5см",
+  height: "5см",
 
   get width() {
-    return 5 + 'см';
+    return 5 + "см";
   },
   get height() {
-    return 5 + 'см';
+    return 5 + "см";
   },
   get perimeter() {
-    return (this._width + this._height) * 2 + 'см';
+    return (this._width + this._height) * 2 + "см";
   },
   get square() {
     return `${this._width * this._height}см2`;
@@ -22,11 +22,11 @@ const restangle = {
   set height(valueH) {
     this._height = valueH;
   },
-}
+};
 
 console.log(restangle.width);
 console.log(restangle.height);
-console.log(restangle.valueW)
+console.log(restangle.valueW);
 
 // height = 100;
 // width = 100;
