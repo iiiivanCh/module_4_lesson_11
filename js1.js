@@ -1,8 +1,6 @@
 "use strict";
 
 const restangle = {
-  width: "5см",
-  height: "5см",
 
   get width() {
     return 5 + "см";
