@@ -2,12 +2,6 @@
 
 const restangle = {
 
-  get width() {
-    return 5 + "см";
-  },
-  get height() {
-    return 5 + "см";
-  },
   get perimeter() {
     return (this._width + this._height) * 2 + "см";
   },
@@ -22,17 +16,12 @@ const restangle = {
   },
 };
 
-console.log(restangle.width);
-console.log(restangle.height);
-console.log(restangle.valueW);
-
-// height = 100;
-// width = 100;
-console.log(restangle);
-restangle.width = 40;
-restangle.height = 40;
+restangle.height = 5;
+restangle.width = 5;
 console.log(restangle.perimeter);
 console.log(restangle.square);
 console.log(restangle.width);
 console.log(restangle.height);
-console.log(restangle);
+console.log(restangle._width);
+console.log(restangle._height);
+
