@@ -4,10 +4,13 @@ const arrNew = [0, 5, 4];
 
 const doSumArray = (arr) => {
   const newArr = Array.from(arr);
-  const sum = newArr.reduce((acc, val) => acc + val, 0);
+  const sum = newArr.reduce((acc, val) => acc + val);
   const arrayMember = Math.trunc(Math.random() * 11);
+  if (sum > 50) {
+    return newArr;
+  }
   newArr.push(arrayMember);
-  return sum > 50 ? newArr : doSumArray(newArr);
+  return doSumArray(newArr);
 };
 
 doSumArray(arrNew);
